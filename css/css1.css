@@ -1,0 +1,258 @@
+header
+{
+background-color: #0082e6;
+
+}
+html {
+  scroll-behavior: smooth;
+}
+.hhh
+{
+  position:sticky;
+  top:0;
+  z-index:1;
+}
+.title h2
+{
+font-family: "Lucida Console" ,Times;
+font-weight:bold;
+font-size:24px;
+padding:10px 10px 10px 10px;
+border:solid 2px;
+width:100%;
+margin-left:6%;
+text-align:center;
+background: -webkit-linear-gradient(#fff,#fff, #f00,#0ff);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+}
+#t2
+{
+display:none;
+
+}
+.title
+{
+
+line-height:30px;
+display:inline-block;
+}
+
+nav
+{
+   background:#0082e6;
+   width:70%;
+float:right;
+display:inline-block;
+}
+nav ul
+{
+ float:right;
+margin-right:20px;
+}
+nav ul li
+{
+ display:inline-block;
+line-height:80px;
+margin:0 5px;
+}
+nav ul li a
+{
+ color:white;
+font-size:17px;
+text-transform:uppercase;
+list-style:none;
+text-decoration:none;
+font-weight:900;
+}
+.qn1
+{
+ background:#F1F2F2;
+padding:30px;
+margin:30px;
+}
+.qn1title
+{
+width:100%;
+    font-variant:small-caps;
+text-align:center;
+}
+body
+{
+   background:#2c3e50;
+}
+#credits td, #credits th {
+  border: 1px solid #ddd;
+  padding: 8px;
+}
+#credits
+{
+padding-left:40px;
+}
+#semester td, #semester th {
+  border: 1px solid #ddd;
+  padding: 8px;
+}
+#semester
+{
+padding-left:40px;
+}
+.calculate
+{
+margin-left:35%;
+   padding:10px;
+margin-top:20px;
+font-variant:small-caps;
+background:black;
+color:white;
+   }
+
+.calculate:hover
+{
+ background:green;
+
+}
+.calculate:active
+{
+ background:red;
+
+}
+body {
+    font-family: 'sofia';font-size:22px;
+}
+.qn1
+{
+   padding-left:15%;
+}
+.checkbtn
+{
+   font-size:30px;
+   color:white;
+   float:right;
+   cursor:pointer;
+display:none;
+}
+#check
+{
+ display:none;
+}
+@media (max-width:500px)
+{
+  .title
+{
+font-size:8px;;
+}
+#t2
+{
+display:inline-block;
+}
+#t1
+{
+display:none;
+}
+}
+@media (max-width:852px)
+{
+#t2
+{
+display:block;
+}
+#t1
+{
+display:none;
+}
+  .title
+{
+width:20%;
+}
+  .title h2
+{
+line-height:20px;
+   font-size:10px;
+   padding:1px 1px 1px;
+}
+}
+@media (max-width:850px)
+{
+ .checkbtn
+{
+    display:block;
+    top:40px;
+    
+}
+nav ul
+{
+   position:fixed;
+   width:100%;
+   height:350px;
+   background:#2c3e50;
+   top:60px;
+   left:-200%;
+   text-align:center;
+   transition:all 0.5s;
+}
+nav ul li
+{
+  display:block;
+}
+#check:checked ~ul
+{
+ left:0;
+}
+}
+@media (max-width:350px)
+{
+.title h2
+{
+font-size:7px;
+}
+#semester
+{
+ padding:0px;
+}
+}
+@media (max-width:760px)
+{
+body
+{
+ font-size:15px;
+}
+}
+@media (max-width:760px)
+{
+body
+{
+ font-size:15px;
+}
+#semester
+{
+ padding:0px;
+}
+.qn1
+{
+ padding:10px;
+}
+}
+@media (max-width:760px)
+{
+body
+{
+ font-size:10px;
+}
+
+}
+img
+{
+width:50%;
+}
+@media (max-width:500px)
+{
+#gpa1
+{
+ width:90%;
+}
+.qn1
+{ 
+margin:2px;
+}
+}

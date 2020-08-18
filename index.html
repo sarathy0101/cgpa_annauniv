@@ -1,0 +1,328 @@
+<!DOCTYPE html>
+<html lang='en'>
+<head>
+<meta charset="UTF-18">
+<meta name="viewport" content="width=device-width,initial-scale=1.0">
+<link rel="stylesheet" href="css/css1.css">
+<title>CGPA calculator</title>
+
+<script src="https://kit.fontawesome.com/a076d05399.js"></script>
+
+
+  
+
+<link href='https://fonts.googleapis.com/css?family=Sofia' rel='stylesheet'>
+</head>
+<body>
+<header class="hhh">
+<div class="title">
+          <h2 >CGPA CALCI<br/><span style="font-size:20px;" id="t1"> AnnaUniversity</span><span id="t2"> AU</span></h2>
+</div>
+
+<nav >
+ <input type="checkbox" id="check">
+  <label for="check" class="checkbtn"> 
+       <i class="fas fa-bars"></i>
+  </label>
+<ul >
+<li ><a href="#hom" class="active" >Home</a></li>
+<li ><a href="#depart"  >Departments</a></li>
+<li id="hom"><a href="https://padeepz.com/anna-university-2017-regulation-syllabus-sem-1-to-8-all-department/" target="_blank">Syllabus</a></li>
+<li ><a href="https://sarathy0101.github.io/portfolio/" >Admin</a></li>
+
+</ul>
+</nav>
+<div style="height:30px;background:#2c3e50" >
+
+</div>
+</header>
+
+<div class="qn1">
+
+<h2 class="qn1title" style="color:#0000A0;">How to calculate cgpa?</h2>
+<div style="display:inline-block;color:red;font-weight:900;font-size:20px;">No of Visitors:</div>
+<div id="CounterVisitor" style="display:inline-block;width:10%;color:green;font-weight:900;">
+</div>
+<h5>Important!!!!! Read note for CGPA</h5>
+<p>The formula to calculate cgpa/gpa is given below:</p>
+<img src="images/cgpaformula.jpg">
+<p>C<sub>i</sub>-Number of credits to the course</p>
+<p>GP<sub>i</sub>-Points corresponding to the grade obtained for each course</p>
+<p>n-Number of courses</p>
+<h4 style="font-weight:900;color:red;">NOTE:</h4><p >In case of cgpa <br> n-stands for no of semesters and  <br>GP<sub>i</sub> - stands for each semester gpa and 
+ <br>C<sub>i</sub> - stands for Total credits for each semester</p>
+<p>Anna University - the Grade system for Regulation 2017 is provided below.</p>
+<table id="credits">
+<tr>
+      <th>Grade</th>
+      <th>Grade Points</th>
+      <th>Mark Range</th>
+</tr>
+<tr>
+      <td>O</td>
+      <td>10</td>
+      <td>91-100</td>
+</tr>
+<tr>
+      <td>A+</td>
+      <td>9</td>
+      <td>81-90</td>
+</tr>
+<tr>
+       <td>A</td>
+      <td>8</td>
+      <td>71-80</td>
+</tr>
+<tr>
+      <td>B+</td>
+      <td>7</td>
+      <td>61-70</td>
+</tr>
+<tr>
+      <td>B</td>
+      <td>6</td>
+      <td>50-60</td>
+</tr>
+<tr>
+      <td>RA</td>
+      <td>0</td>
+      <td ><50</td>
+</tr>
+</table>
+
+<h1 style="color:green;">Enter your GPA to calculate!!!</h1>
+<h3>Department:</h3>
+<input type="radio" id="dep1" name="dep" onclick="credits(1)">ECE</input>
+<input type="radio" id="dep2" name="dep" onclick="credits(2)">CSE</input>
+<input type="radio" id="dep3" name="dep" onclick="credits(3)">IT</input>
+<input type="radio" id="dep4" name="dep" onclick="credits(4)">MECH</input>
+<input type="radio" id="dep5" name="dep" onclick="credits(5)">BME</input>
+<input type="radio" id="dep6" name="dep" onclick="credits(6)">EEE</input>
+<input type="radio" id="dep7" name="dep" onclick="credits(7)">Others</input>
+<table id="semester">
+<tr>
+      <th>Semester</th>
+      <th>Credits</th>
+      <th>N<sup>th</sup> Semester</br>(if finished the </br> respective sem </br> please tick)</th>
+      <th>GPA</th>
+</tr>
+<tr>
+      <td>1</td>
+     <td><input placeholder="25" disabled="true" id="cre1" style="width:95%;"></input></td>
+      <td><input type="checkbox" id="gpa1c" onclick="check(1)"></input></td>
+      <td><input placeholder="0" disabled="true" id="gpa1" style="width:95%;"></input></td>     
+</tr>
+<tr>
+      <td>2</td>
+     <td><input placeholder="25" disabled="true" id="cre2" style="width:95%;"></input></td>
+      <td><input type="checkbox" id="gpa2c" onclick="check(2)"></input></td>
+      <td><input placeholder="0" disabled="true" id="gpa2" style="width:95%;"></input></td>     
+</tr>
+<tr>
+      <td>3</td>
+     <td><input placeholder="25" disabled="true" id="cre3" style="width:95%;"></input></td>
+      <td><input type="checkbox" id="gpa3c" onclick="check(3)"></input></td>
+      <td><input placeholder="0" disabled="true" id="gpa3" style="width:95%;"></input></td>     
+</tr>
+<tr>
+      <td>4</td>
+     <td><input placeholder="24" disabled="true" id="cre4" style="width:95%;"></input></td>
+      <td><input type="checkbox" id="gpa4c" onclick="check(4)"></input></td>
+      <td><input placeholder="0" disabled="true" id="gpa4" style="width:95%;"></input></td>     
+</tr>
+<tr>
+      <td>5</td>
+     <td><input placeholder="25" disabled="true" id="cre5" style="width:95%;"></input></td>
+      <td><input type="checkbox" id="gpa5c" onclick="check(5)"></input></td>
+      <td><input placeholder="0" disabled="true" id="gpa5" style="width:95%;"></input></td>     
+</tr>
+<tr>
+      <td>6</td>
+     <td><input placeholder="24" disabled="true" id="cre6" style="width:95%;"></input></td>
+      <td><input type="checkbox" id="gpa6c" onclick="check(6)"></input></td>
+      <td><input placeholder="0" disabled="true" id="gpa6" style="width:95%;"></input></td>     
+</tr>
+<tr>
+      <td>7</td>
+     <td><input placeholder="25" disabled="true" id="cre7" style="width:95%;"></input></td>
+      <td><input type="checkbox" id="gpa7c" onclick="check(7)"></input></td>
+      <td><input placeholder="0" disabled="true" id="gpa7" style="width:95%;"></input></td>     
+</tr>
+<tr>
+      <td>8</td>
+     <td><input placeholder="25" disabled="true" id="cre8" style="width:95%;"></input></td>
+      <td><input type="checkbox" id="gpa8c" onclick="check(8)"></input></td>
+      <td><input placeholder="0" disabled="true" id="gpa8" style="width:95%;"></input></td>     
+</tr>
+</table>
+<button class="calculate" onclick="calculate()">Calculate</button>
+<br>
+<div id="res" style="margin:3%;color:#FFA62F;">
+<h2 style="display:inline-block;padding-left:30%;text-align:center;" >Your CGPA:</h2>
+<h2 id="result" style="display:inline-block;width:10%;"></h2>
+</div>
+<script>
+var n = localStorage.getItem('on_load_counter');
+
+if (n === null) {
+  n = 0;
+}
+n++;
+
+localStorage.setItem("on_load_counter", n);
+
+nums = n.toString().split('').map(Number);
+document.getElementById('CounterVisitor').innerHTML = '';
+for (var i of nums) {
+  document.getElementById('CounterVisitor').innerHTML += '<span class="counter-item">' + i + '</span>';
+}
+
+</script>
+</div>
+<script>
+function credits(a)
+{
+ arr=[25,25,25,24,25,24,22,16];
+   if(a==1)
+   {
+      arr=[25,25,25,24,25,24,22,16];
+    }
+    else if (a==2)
+   {
+       
+      arr=[25,24,24,24,25,24,22,16];
+   }
+    else if (a==3)
+   {
+       
+      arr=[25,25,24,24,25,23,22,16];
+   }
+    else if (a==4)
+   {
+       
+      arr=[25,25,25,24,22,24,23,16];
+   }
+    else if (a==5)
+   {
+       
+      arr=[25,25,25,24,25,24,22,16];
+   }
+    else if (a==6)
+   {
+       
+      arr=[25,25,23,25,23,21,22,16];
+   }
+else
+{ 
+   for(i=1;i<9;i++)
+{
+    var tt="cre"+i;
+    document.getElementById(tt).disabled=false;
+    document.getElementById(tt).value=0;
+}
+}
+if(a!=7)
+{ 
+    for(i=1;i<9;i++)
+{
+    var tt="cre"+i;
+    document.getElementById(tt).disabled=true;
+    document.getElementById(tt).value=arr[i-1];
+}
+}
+}
+function check(a)
+{
+var checkb="gpa"+a+"c";
+var sem="gpa"+a;
+
+if(document.getElementById(checkb).checked==true)
+{
+     document.getElementById(sem).disabled=false;
+     
+}
+else
+{
+     document.getElementById(sem).disabled=true;
+     document.getElementById(sem).value=0;
+    
+}
+}
+
+</script>
+<script>
+  function calculate()
+{
+  var totcreditsearned=0;
+  var totcredits=0;
+var a=0;
+for(i=1;i<8;i++)
+{
+    var cred="dep"+i;
+    if(document.getElementById(cred).checked==true)
+{
+       a=i;
+}
+}
+ if(a==1)
+   {
+      arr=[25,25,25,24,25,24,22,16];
+    }
+    else if (a==2)
+   {
+       
+      arr=[25,24,24,24,25,24,22,16];
+   }
+    else if (a==3)
+   {
+       
+      arr=[25,25,24,24,25,23,22,16];
+   }
+    else if (a==4)
+   {
+       
+      arr=[25,25,25,24,22,24,23,16];
+   }
+    else if (a==5)
+   {
+       
+      arr=[25,25,25,24,25,24,22,16];
+   }
+    else if (a==6)
+   {
+       
+      arr=[25,25,23,25,23,21,22,16];
+   }
+else
+{ 
+   for( i=0;i<8;i++)
+{
+    var tt="cre"+(i+1);
+    
+    arr[i+1]=document.getElementById(tt).value;
+}
+}
+
+
+for(i=1;i<9;i++)
+{ 
+   var checkb="gpa"+i+"c";
+var sem="gpa"+i;
+
+if(document.getElementById(checkb).checked==true)
+{
+    gpa_inp=document.getElementById(sem).value;
+    totcreditsearned+=(arr[i-1]*gpa_inp);
+    totcredits+=arr[i-1];
+}
+}
+var output=totcreditsearned/totcredits;
+ document.getElementById('result').innerHTML=output;
+ document.getElementById('res').style.border="solid black 2px";
+ document.getElementById('res').style.width="60%";
+ document.getElementById('res').style.color="white";
+  document.getElementById('res').style.background="#FFA62F";
+}
+</script>
+</body>
+</html>
